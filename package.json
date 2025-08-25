@@ -1,0 +1,49 @@
+{
+  "name": "@divetocode/collab-api-hub",
+  "version": "0.0.1",
+  "description": "Unified collaboration API adapters (Slack, Telegram, Googlemailer, GoogleSheet, Notion, etc..) — monorepo root",
+  "keywords": [
+    "collaboration",
+    "integrations",
+    "adapters",
+    "slack",
+    "telegram",
+    "notion",
+    "google",
+    "api",
+    "workspace"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/divetocode/divetocode-collab-api-hub.git"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "@types/nodemailer": "^7.0.1",
+    "tsup": "^7.2.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "axios": "^1.10.0",
+    "googleapis": "^157.0.0",
+    "nodemailer": "^7.0.5"
+  }
+}
