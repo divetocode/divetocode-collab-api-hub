@@ -1,6 +1,6 @@
 {
   "name": "@divetocode/collab-api-hub",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Unified collaboration API adapters (Slack, Telegram, Googlemailer, GoogleSheet, Notion, etc..) — monorepo root",
   "keywords": [
     "collaboration",
